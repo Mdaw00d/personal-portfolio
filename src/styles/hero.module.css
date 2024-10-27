@@ -1,0 +1,39 @@
+.h1{
+    font-weight: 700;
+    font-size: 4rem /* 48px */;
+    line-height: 1;
+    margin-left: 4rem;
+    margin-top: 11rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.span{
+    color: blue;
+}
+.cv{
+    margin-left: 5rem;
+    margin-top: 1rem;
+    width: 9rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    --tw-bg-opacity: 1;
+    background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+    transition: background-color 0.3s ease, transform 0.2s ease
+}
+.cv:hover {
+    background-color:skyblue; /* Darker color on hover */
+    transform: scale(1.05);
+}
+.pic {
+    margin-top: -300px;
+    width: 24rem;
+    height: 24rem;
+    border-radius: 9999px;
+    margin-left: 900px;  
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

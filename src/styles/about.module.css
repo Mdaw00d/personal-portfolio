@@ -1,0 +1,24 @@
+.h1{
+    font-weight: 500;
+    font-size: 2rem /* 48px */;
+    line-height: 1;
+    margin-left: 4rem;
+    margin-top: 11rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.span{
+    color: rgb(6, 6, 10);
+}
+.pic {
+    margin-top: -300px;
+    width: 24rem;
+    height: 24rem;
+    border-radius: 9999px;
+    margin-left: 900px;  
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

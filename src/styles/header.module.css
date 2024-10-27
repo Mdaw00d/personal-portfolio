@@ -1,0 +1,42 @@
+.head {
+  display: flex;
+  column-gap: 16rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 1.5rem;
+}
+.name {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 2rem;
+  font-weight: 700;
+}
+.links > :not([hidden]) ~ :not([hidden]) {
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --tw-space-x-reverse: 0;
+  margin-right: calc(8rem /* 128px */ * var(--tw-space-x-reverse));
+  margin-left: calc(8rem /* 128px */ * calc(1 - var(--tw-space-x-reverse)));
+}
+.home {
+  font-weight: 700;
+}
+.button {
+  background-color: rgb(2 132 199);
+  width: 110px;
+  height: 30px;
+  margin-left: 1200px;
+  margin-top: -30px;
+  border-radius: 100px;
+  flex:content;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;  
+}
+.button:hover {
+    background-color: skyblue; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+  }
+.txt {
+  margin-left: 20px;
+}
