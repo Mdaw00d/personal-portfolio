@@ -6,7 +6,7 @@ export default function Hero(){
             <div>
                 <div className="space-y-3">
                     <h1 className={styles.h1}>I Am <br/> <span className={styles.span}>Web Designer</span></h1>
-                    <p className="ml-14">
+                    <p className={styles.para}>
                     Creative and skilled web developer with expertise in building responsive, user-friendly websites.<br />Passionate about transforming ideas into impactful digital experiences.</p>
                 </div>
                 <button className={styles.cv}>Download CV</button>

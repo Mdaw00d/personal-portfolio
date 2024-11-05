@@ -7,8 +7,23 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
+@media (max-width: 640px) {
+    .h1 {
+      
+      font-size:2rem; 
+      margin-left: 2rem;
+    }
+}
 .span{
     color: rgb(6, 6, 10);
+}
+.para{
+    margin-left: 3.5rem;
+}
+@media (max-width: 640px) {
+    .para {
+      margin-left: 2.5rem;
+    }
 }
 .pic {
     margin-top: -300px;
@@ -17,8 +32,21 @@
     border-radius: 9999px;
     margin-left: 900px;  
 }
+@media (max-width: 640px) {
+    .pic {
+        width: 14rem;
+        height: 14rem;
+        margin-left: 225px;
+        margin-top: -530px;
+    }
+}
 .icons{
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+@media (max-width: 640px) {
+    .icons {
+      margin-top: 22rem;
+    }
 }

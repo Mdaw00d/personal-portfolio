@@ -11,13 +11,31 @@
   line-height: 2rem;
   font-weight: 700;
 }
-.links > :not([hidden]) ~ :not([hidden]) {
+@media (max-width: 640px) {
+  .name {
+   font-size: 1.5rem;
+   line-height: 1.4rem;
+   margin-top: -40px;
+   margin-left: -10px;
+  }
+}
+
+.links {
+  display: flex;
+  gap: 120px;
   font-weight: 700;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  --tw-space-x-reverse: 0;
-  margin-right: calc(8rem /* 128px */ * var(--tw-space-x-reverse));
-  margin-left: calc(8rem /* 128px */ * calc(1 - var(--tw-space-x-reverse)));
 }
+
+/* Hide links on screens 640px and below */
+@media (max-width: 640px) {
+  .links {
+    display: none;
+  }
+}
+
+
+
 .home {
   font-weight: 700;
 }
@@ -37,6 +55,33 @@
     background-color: skyblue; /* Darker color on hover */
     transform: scale(1.05); /* Slightly larger on hover */
   }
+  @media (max-width: 640px) {
+    .button {
+    width: 90px;
+    height: 25px;
+      margin-left: 250px;
+    }
+  }
 .txt {
   margin-left: 20px;
+  font-weight: 600;
+}
+@media (max-width: 640px) {
+  .txt {
+   
+    margin-left: 12px;
+    font-size: medium;
+    font-weight: 700;
+  }
+}
+.sidebar{
+  display: flex;
+  margin-left: 430px;
+  margin-top: 10px;
+
+}
+@media (min-width:768px) {
+  .sidebar {
+    display: none;
+  }
 }

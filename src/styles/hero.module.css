@@ -3,13 +3,29 @@
     font-size: 4rem /* 48px */;
     line-height: 1;
     margin-left: 4rem;
-    margin-top: 11rem;
+    margin-top: 15rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
+@media (max-width: 640px) {
+    .h1 {
+      font-size:2rem; 
+      margin-left: 2rem;
+    }
+    
+    .span {
+      font-size: 2rem;
+      margin-left: 0rem;
+    }
+  }
 .span{
     color: blue;
 }
+.para{
+        margin-left: 3.5rem;
+        margin-left: 2rem;
+}
+
 .cv{
     margin-left: 5rem;
     margin-top: 1rem;
@@ -25,6 +41,7 @@
     background-color:skyblue; /* Darker color on hover */
     transform: scale(1.05);
 }
+
 .pic {
     margin-top: -300px;
     width: 24rem;
@@ -32,8 +49,25 @@
     border-radius: 9999px;
     margin-left: 900px;  
 }
+@media (max-width: 640px) {
+    .pic {
+        width: 16rem;
+        height: 16rem;
+        margin-left: 225px;
+        margin-top: -445px;
+    }
+}
 .icons{
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: -1rem;
+}
+@media (max-width: 640px) {
+    .icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15.2rem;
+    }
 }

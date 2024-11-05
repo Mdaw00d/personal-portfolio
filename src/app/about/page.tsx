@@ -11,10 +11,10 @@ export default function About() {
             Hey!
             <br />{" "}
             <span className={styles.span}>
-              I am Dawood, a Creative Web Developer
+              I am Dawood, <br />a Creative Web Developer.
             </span>
           </h1>
-          <p className="ml-14">
+          <p className ={styles.para}>
             Passionate web developer with a strong foundation in both front-end
             and <br /> back-end technologies. Skilled in creating user-centric,
             responsive websites <br /> and applications that are both visually
