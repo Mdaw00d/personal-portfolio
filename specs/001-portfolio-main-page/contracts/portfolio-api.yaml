@@ -1,0 +1,76 @@
+# API Contract: Portfolio Static Content
+
+## Overview
+The portfolio website is a static single-page application. All content is embedded in the application bundle and does not require API calls for the main portfolio content. This document describes potential future API contracts if dynamic functionality is added.
+
+## Current State
+- All portfolio content (name, bio, skills, navigation) is static
+- No server-side API endpoints required for core functionality
+- Contact form (if implemented) would be the only interactive element requiring backend integration
+
+## Potential Future Endpoints
+
+### Contact Form Submission
+```
+POST /api/contact
+Content-Type: application/json
+
+Request:
+{
+  "name": "string",
+  "email": "string",
+  "message": "string",
+  "subject": "string"
+}
+
+Response (Success):
+Status: 200 OK
+{
+  "success": true,
+  "message": "Contact request received successfully"
+}
+
+Response (Error):
+Status: 400 Bad Request
+{
+  "success": false,
+  "errors": ["error messages"]
+}
+```
+
+### Portfolio Data (for potential CMS integration)
+```
+GET /api/portfolio
+
+Response:
+Status: 200 OK
+{
+  "profile": {
+    "name": "Muhammad Dawood",
+    "title": "Full-stack developer",
+    "bio": "Skilled full-stack developer experienced in building responsive...",
+    "avatarUrl": "string"
+  },
+  "skills": [
+    {
+      "id": "frontend",
+      "name": "Frontend",
+      "skills": ["HTML", "CSS", "JavaScript", "React.js", "Next.js"],
+      "order": 1
+    }
+  ],
+  "navigation": [
+    {
+      "id": "home",
+      "label": "Home",
+      "url": "#home",
+      "order": 1
+    }
+  ]
+}
+```
+
+## Current Implementation Notes
+- All data is currently hardcoded in the React components
+- No external API dependencies for core functionality
+- Static site generation approach for deployment

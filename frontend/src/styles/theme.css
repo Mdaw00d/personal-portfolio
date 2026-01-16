@@ -1,0 +1,107 @@
+@import "tailwindcss" reference;
+
+@layer utilities {
+  /* Dark & Professional color palette */
+  .text-primary {
+    @apply text-gray-100;
+  }
+
+  .text-secondary {
+    @apply text-gray-400;
+  }
+
+  .bg-primary {
+    @apply bg-gray-900;
+  }
+
+  .bg-secondary {
+    @apply bg-gray-800;
+  }
+
+  .accent-color {
+    @apply text-cyan-400;
+  }
+
+  .accent-bg {
+    @apply bg-cyan-500;
+  }
+
+  /* Consistent spacing with improved hierarchy */
+  .section-padding {
+    @apply py-20 px-4 md:px-8 lg:px-16;
+  }
+
+  /* Enhanced Typography with better hierarchy */
+  .heading-1 {
+    @apply text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight;
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .heading-2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4;
+  }
+
+  .heading-3 {
+    @apply text-2xl md:text-3xl font-semibold tracking-tight;
+  }
+
+  .body-text {
+    @apply text-base md:text-lg leading-relaxed text-gray-300;
+  }
+
+  /* Modern Buttons with animations */
+  .btn-primary {
+    @apply px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg font-semibold
+           hover:from-cyan-600 hover:to-blue-600 transition-all duration-300
+           focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-900
+           shadow-lg shadow-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/70 hover:scale-105
+           transform;
+  }
+
+  /* Modern Card styling with depth */
+  .card {
+    @apply bg-gray-800 rounded-xl shadow-xl p-6
+           border border-gray-700 hover:border-cyan-500/50
+           transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/20
+           hover:-translate-y-1;
+  }
+
+  /* Skill badge styling */
+  .skill-badge {
+    @apply px-4 py-2 bg-gray-700 text-gray-200 rounded-lg text-sm font-medium
+           border border-gray-600 hover:border-cyan-500 hover:text-cyan-400
+           transition-all duration-300 hover:scale-105 transform;
+  }
+
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-in;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
